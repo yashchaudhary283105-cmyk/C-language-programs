@@ -227,7 +227,7 @@ int main(){
 // printf("%d",a++);
 
 
-// FACTORIAL (BY SELF)
+// FACTORIAL (BS)
 // int n;
 // printf("Enter the number: ");
 // scanf("%d",&n);
@@ -251,13 +251,128 @@ int main(){
 // }
 // return 0;
 
-char ch;
+// Q13(ASCII)
+// char a;
+// scanf("%c",&a);
+// printf("%d",a);
+// printf("\n%c",++a);
+// printf("\n%d",++a);
+// return 0;
 
+// Q14(Valid triangle)
+// int a,b,c;
+// printf("Enter the sides of triangle: ");
+// scanf("%d %d %d",&a,&b,&c);
+// if (a+b>c && b+c>a && c+a>b){
+//     printf("\nValid triangle");
+//     if (a==b && b==c && c==a){
+//         printf("\nEquilateral triangle\n");
+//     }
+//     else if (a==b || b==c || c==a ){
+//         printf("\nIsosceles triangle\n");
+//     }
+//     else {
+//         printf("\nScalene triangle\n");
+//     }
+// }
+// else {
+//     printf("\nNot a valid triangle\n");
+// }
+// return 0;
 
+// Q15(check last digit is even)
+// int d;
+// printf("Enter the digit: ");
+// scanf("%d",&d);
+// if ((d%10)%2==0){
+//     printf("EVEN");
+// }
+// else {
+//     printf("ODD");
+// }
+// return 0;
 
+// # ATM WITHDRAWAL SYSTEM
+int pin=3535;
+int p;
+int b=0;
+int a;
+int w;
 
+// #Checking pin
 
-
-
-
+while(1){
+    printf("\nEnter pin: ");
+    scanf("%d",&p);
+    if (pin==p) break;
+    else printf(":( Try again");
 }
+printf("\nLogin succesful\n");
+// #Menu
+while (1){
+    printf("--------------------\n");
+    printf("1 Check Balance\n");
+    printf("2 Add Money\n");
+    printf("3 Withdraw Money\n");
+    printf("4 Exit");
+    printf("\n--------------------\n");
+    int choice;
+    printf("Enter choice: ");
+    scanf("%d",&choice);
+
+    if (choice==1){
+    if (b>0){
+        printf("sufficient Balance: %d\n",b);
+    }
+    else if (b==0){
+        printf("Balance: %d\n",b);
+    }
+    else{
+        printf("Insufficient Balance\n");
+    }
+    }
+
+    if (choice==2){
+    printf("Enter amount to add: ");
+    scanf("%d",&a);
+    b=b+a;
+    printf("Amount %d is Successful\n",b);
+    }
+
+    if (choice==3){
+    printf("Enter Amount to withdraw: ");
+    scanf("%d",&w);
+    if (b>0 && b>=w){
+        b-=w;
+        printf("Successfully withdrawn rs: %d\n",w);
+    }
+    else{
+        printf("Insufficient balance\n");
+    }
+    }
+
+    if (choice==4){
+    printf("Thanks for visiting~\n");
+    break;
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
