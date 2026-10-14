@@ -293,69 +293,138 @@ int main(){
 // return 0;
 
 // # ATM WITHDRAWAL SYSTEM
-int pin=3535;
-int p;
-int b=0;
-int a;
-int w;
+// int pin=3535;
+// int p;
+// int b=0;
+// int a;
+// int w;
 
-// #Checking pin
+// // #Checking pin
 
-while(1){
-    printf("\nEnter pin: ");
-    scanf("%d",&p);
-    if (pin==p) break;
-    else printf(":( Try again");
+// while(1){
+//     printf("\nEnter pin: ");
+//     scanf("%d",&p);
+//     if (pin==p) break;
+//     else printf(":( Try again");
+// }
+// printf("\nLogin succesful\n");
+// // #Menu
+// while (1){
+//     printf("--------------------\n");
+//     printf("1 Check Balance\n");
+//     printf("2 Add Money\n");
+//     printf("3 Withdraw Money\n");
+//     printf("4 Exit");
+//     printf("\n--------------------\n");
+//     int choice;
+//     printf("Enter choice: ");
+//     scanf("%d",&choice);
+
+//     if (choice==1){
+//     if (b>0){
+//         printf("sufficient Balance: %d\n",b);
+//     }
+//     else if (b==0){
+//         printf("Balance: %d\n",b);
+//     }
+//     else{
+//         printf("Insufficient Balance\n");
+//     }
+//     }
+
+//     if (choice==2){
+//     printf("Enter amount to add: ");
+//     scanf("%d",&a);
+//     b=b+a;
+//     printf("Amount %d is Successful\n",b);
+//     }
+
+//     if (choice==3){
+//     printf("Enter Amount to withdraw: ");
+//     scanf("%d",&w);
+//     if (b>0 && b>=w){
+//         b-=w;
+//         printf("Successfully withdrawn rs: %d\n",w);
+//     }
+//     else{
+//         printf("Insufficient balance\n");
+//     }
+//     }
+
+//     if (choice==4){
+//     printf("Thanks for visiting~\n");
+//     break;
+//     }
+// }
+// }
+
+// #For loops question and placements
+
+// for (int i=1;i<=50;i++) printf("%d\n",i);
+
+// for (int i=10;i>=1;i--) {
+//     printf("%d\n",i);
+// }
+// printf("Lift off!!");
+
+// int n;
+// printf("Enter a num: ");
+// scanf("%d",&n);
+// for (int i=1;i<=10;i++) {
+//     printf("%d x %d = %d\n",n,i,n*i);
+// }
+
+for (int i=1;i<=20;i++) {
+    if (i%2==0) printf("%d ",i);
 }
-printf("\nLogin succesful\n");
-// #Menu
-while (1){
-    printf("--------------------\n");
-    printf("1 Check Balance\n");
-    printf("2 Add Money\n");
-    printf("3 Withdraw Money\n");
-    printf("4 Exit");
-    printf("\n--------------------\n");
-    int choice;
-    printf("Enter choice: ");
-    scanf("%d",&choice);
 
-    if (choice==1){
-    if (b>0){
-        printf("sufficient Balance: %d\n",b);
-    }
-    else if (b==0){
-        printf("Balance: %d\n",b);
-    }
-    else{
-        printf("Insufficient Balance\n");
-    }
-    }
 
-    if (choice==2){
-    printf("Enter amount to add: ");
-    scanf("%d",&a);
-    b=b+a;
-    printf("Amount %d is Successful\n",b);
-    }
 
-    if (choice==3){
-    printf("Enter Amount to withdraw: ");
-    scanf("%d",&w);
-    if (b>0 && b>=w){
-        b-=w;
-        printf("Successfully withdrawn rs: %d\n",w);
-    }
-    else{
-        printf("Insufficient balance\n");
-    }
-    }
 
-    if (choice==4){
-    printf("Thanks for visiting~\n");
-    break;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
