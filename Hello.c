@@ -2,9 +2,9 @@
 #include <math.h>
 int main(){
 
-    int a;
-    a=(5<<1);
-    printf("%d",a);
+    // int a;
+    // a=(5<<1);
+    // printf("%d",a);
 
 
     // int a;
